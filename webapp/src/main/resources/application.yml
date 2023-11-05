@@ -1,0 +1,13 @@
+server:
+  port: 6001
+spring:
+  devtools:
+    restart:
+      enabled: true  #设置开启热部署
+      exclude: "static/**,public/**" ##排除/static，/public
+
+#logging:
+#  level:
+#    com.demo.spb: debug
+#    org.springframework.web.servlet: debug #mvc.method.annotation.RequestResponseBodyMethodProcessor: debug
+

@@ -1,5 +1,7 @@
 package com.demo.spb.common;
 
+import cn.hutool.json.JSONUtil;
+
 /**
  * 通用返回对象
  * Created by bill on 2020/4/16.
@@ -111,5 +113,10 @@ public class CommonResult<T> {
 
     public void setData(T data) {
         this.data = data;
+    }
+
+    @Override
+    public String toString() {
+        return JSONUtil.toJsonStr(this);
     }
 }

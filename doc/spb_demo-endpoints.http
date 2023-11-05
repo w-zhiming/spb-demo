@@ -1,0 +1,23 @@
+### hello
+GET http://localhost:6001/demo/hello
+
+<> 2023-10-30T225257.200.json
+<> 2023-10-30T224657.400.json
+<> 2023-10-30T224645.400.json
+
+
+###
+POST http://localhost:6001/demo/send
+Content-Type: application/json
+
+{
+   "name":"bill"
+}
+
+### getDataSync
+GET http://localhost:6001/demo/getDataSync
+Content-Type: application/json
+
+### getDataAsync
+GET http://localhost:6001/demo/getDataAsync
+Content-Type: application/json

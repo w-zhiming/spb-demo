@@ -82,6 +82,8 @@ public class MqAccept implements MessageListener {
             } else if (msg instanceof ObjectMessage) {
                 System.out.println("------Received ObjectMessage------");
                 ObjectMessage message = (ObjectMessage) msg;
+               // System.out.println(message.getObject().);
+               // ActiveMQMessage mqMessage = (ActiveMQMessage) message.getObject();
                // MqMessage mqMessage = (MqMessage) message.getObject();
                 //System.out.println("name: " + mqMessage.getName());
             } else if (msg instanceof BytesMessage) {
